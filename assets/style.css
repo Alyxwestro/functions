@@ -1,0 +1,33 @@
+:root {
+    --typography--header: 'Soyuz Grotesk', sans-serif;
+    --font--display: 'Familjen Grotesk', sans-serif;
+    --font--text: 'Sometimes Times', serif;
+
+    --font--size: 20px;
+    --scale: 2;
+    --spacing: 10px;
+    --baseline: 30px;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: black;
+    margin: var(--spacing);
+}
+
+
+/* NAVIGATION BAR */
+/* NAVIGATION BAR */
+/* NAVIGATION BAR */
+h1{
+    font-family: var(--typography--header);
+    color: white;
+    font-size: var(--font--size);
+}
+
+
+
+
