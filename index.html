@@ -6,49 +6,53 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="assets/reset.css" rel="stylesheet">
 		<link href="assets/style.css" rel="stylesheet">
-		<script defer src="assets/main.js"></script>
+		<script src="assets/main.js"></script>
 	</head>
 
     <body>
         <header>
-            <nav>
+            <nav class="navigation">
                 <div class="one">
                     <h1>one</h1>
-                <div>
+                </div>
 
-                <div class="goal dropdown">
-                    <input type="checkbox" id="dropdown"></input>
-                    <label for="dropdown" class="time">
+                <div class="goal-dropdown">       
+                    <label for="dropdown-1" class="goal">
                     <h1>Set a Goal</h1>
-                    <span class="arrow"></span>
+                    <span class="arrow-1"></span>
                     </label>
+                    <input type="checkbox" id="dropdown-1"></input>
 
-                        <ul class="dropdown-content" role="alarm">
-                            <li><h1>Goal</h1></li>
-                            <li><h2>Wrtie your Goal</h2></li>
-                            <li><h1>Calendar</h1></li>
+                        <ul class="dropdown-content-1" role="alarm">
+                            <li><h2>1.Goal</h2></li>
+                            <li><input id="inputBox" placeholder="Wrtie your Goal...." required type="text"></li>
+                            <li><h2>2.Calendar</h2></li>
                         </ul>
                 </div>  
 
-                <div class="email dropdown">
-                    <input type="checkbox" id="dropdown"></input>
-                    <label for="dropdown" class="time">
+                <div class="email-dropdown">
+                    
+                    <label for="dropdown" class="email">
                         <h1>Alarm</h1>
-                        <span class="arrow"></span>
+                        <span class="arrow-2"></span>
                     </label>
+                    <input type="checkbox" id="dropdown"></input>
 
-                        <ul class="dropdown-content" role="alarm">
+                        <ul class="dropdown-content-2" role="alarm">
                             <li><h2>Email</h2></li>
                         </ul>
                 </div>
-
+                
                 <div class="quote">
-                    <h1>Be a Number 1 Deisgner.</h1>
+                    <div class="inner">
+                        <h1 class="scrolling-text">Wrtie your Goal. Wrtie your Goal. Wrtie your Goal. Wrtie your Goal. Wrtie your Goal.</h1>
+                    </div>
                 </div>
-            </nav>
+            </nav>           
         </header>
 
         <main>
+            <!-- <div class="outputBox" id="outputBox"></div> -->
         </main>
     </body>
 
