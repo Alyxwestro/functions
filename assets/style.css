@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 :root {
     --typography--header: 'Soyuz Grotesk', sans-serif;
-    --font--display: 'Familjen Grotesk', sans-serif;
+    --font--display: 'Inter', sans-serif;
     --font--text: 'Sometimes Times', serif;
 
     --font--size: 20px;
@@ -14,7 +16,7 @@ html{
 }
 
 body{
-    background-color: black;
+    background-color: #E8E3D5;
     margin: var(--spacing);
 }
 
@@ -34,8 +36,9 @@ body{
 }
 
 .one{   
-    background: black;  
-    box-shadow: 0 0 10px rgb(83, 83, 83);
+    background: #E8E3D5;  
+    border-radius: 30px;
+    box-shadow: 0 0 5px rgb(83, 83, 83);
     cursor: pointer;
     width: 100%;     
     padding-top: var(--spacing);      
@@ -44,8 +47,9 @@ body{
 }
 
 .goal-dropdown{
-    background: black;  
-    box-shadow: 0 0 10px rgb(83, 83, 83);
+    background: #E8E3D5;  
+    border-radius: 30px;
+    box-shadow: 0 0 5px rgb(83, 83, 83);
     cursor: pointer;
     width: 100%;    
     padding-top: 10px;   
@@ -55,8 +59,9 @@ body{
 }
 
 .email-dropdown{  
-    background: black;  
-    box-shadow: 0 0 10px rgb(83, 83, 83);
+    background: #E8E3D5;  
+    border-radius: 30px;
+    box-shadow: 0 0 5px rgb(83, 83, 83);
     cursor: pointer;
     width: 100%;   
     padding-top: 10px;
@@ -66,8 +71,9 @@ body{
 }
 
 .quote{
-    background: black;  
-    box-shadow: 0 0 10px rgb(83, 83, 83); 
+    background: #E8E3D5;  
+    border-radius: 30px;
+    box-shadow: 0 0 5px rgb(83, 83, 83); 
     cursor: pointer; 
     width: 100%;
     padding-top: 10px;  
@@ -76,15 +82,16 @@ body{
 }
 
 h1{
-    font-family: var(--typography--header);
-    color: white;
+    font-family: var(--typography--header); 
     font-size: var(--font--size);
+    color: black;
 }
 
 h2{
     font-family: var(--font--display);
-    color: white;
-    font-size: var(--font--size);
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
 }
 
 /* NAVIGATION BAR DROPDOWN GOAL*/
@@ -99,7 +106,7 @@ h2{
 .arrow-1 {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 6px solid #fff;
+    border-top: 6px solid black;
     transition: transform ease-in-out 0.3s;
 }
   
@@ -116,8 +123,9 @@ h2{
     transform: translateY(-1em);
     transition: transform ease 0.3s;
 
-    background: black;
-    box-shadow: 0 0 10px rgb(83, 83, 83);
+    background: #E8E3D5;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(83, 83, 83); 
 }
 
 input[type="checkbox"]:checked ~ .dropdown-content-1 {
@@ -126,7 +134,7 @@ input[type="checkbox"]:checked ~ .dropdown-content-1 {
 }
 
 .dropdown-content-1 li {
-    color: white;
+    color: black;
     font-size: 20px;
     font-family: var(--font--text);
     margin-top: var(--spacing);
@@ -147,18 +155,19 @@ input[type="checkbox"] {
 /* NAVIGATION BAR DROPDOWN GOAL Input Display*/ 
 #inputBox{
     border: 1px solid #ccc;
-    border-radius: 2px;
+    border-radius: 4px;
     padding: 5px;
     width: 100%;
+    padding: 0.5rem;
 }
 
 #inputBox:focus{
-    border-color: pink;  
+    box-shadow: 0 0 3px rgb(83, 83, 83); 
 }
 
-/* NAVIGATION BAR DROPDOWN GOAL OUTPUT Display*/
-/* NAVIGATION BAR DROPDOWN GOAL OUTPUT Display*/
-/* NAVIGATION BAR DROPDOWN GOAL OUTPUT Display*/ 
+/* BODY NAVIGATION BAR DROPDOWN GOAL OUTPUT Display*/
+/* BODY NAVIGATION BAR DROPDOWN GOAL OUTPUT Display*/
+/* BODY NAVIGATION BAR DROPDOWN GOAL OUTPUT Display*/ 
 .outputBox{
     position: fixed;
     bottom:var(--spacing);
@@ -217,6 +226,18 @@ input[type="checkbox"] {
     width: 10%;
 }
 
+
+/* NAVIGATION BAR DROPDOWN CALENDAR*/
+/* NAVIGATION BAR DROPDOWN CALENDAR*/
+/* NAVIGATION BAR DROPDOWN CALENDAR*/
+#calendar{
+    display: block;
+    width: 100%; /* Set width to fill its container */
+    padding: 0.5rem; /* Add some padding for better appearance */
+    border: 1px solid #ccc; /* Add a border for better visibility */
+    border-radius: 4px; /* Add rounded corners for better aesthetics */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
   
 /* NAVIGATION BAR DROPDOWN EMAIL*/
 /* NAVIGATION BAR DROPDOWN EMAIL*/
@@ -230,22 +251,26 @@ input[type="checkbox"] {
 .arrow-2 {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 6px solid #fff;
+    border-top: 6px solid black;
     transition: transform ease-in-out 0.3s;
 }
   
 .dropdown-content-2 {
     list-style: none;
-    position: absolute;
-    top: 50px;
+    position: relative;
+    top: 20px;
     width: 100%;
+    padding: var(--spacing);
+    padding-left: calc(2*var(--spacing));
+    padding-right: calc(2*var(--spacing));
+
     visibility: hidden;
     transform: translateY(-1em);
     transition: transform ease 0.3s;
-      background: black;
-    border-radius: 18px;
-    padding-left: 20px;
-    padding: var(--spacing);
+
+    background: #E8E3D5;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(83, 83, 83); 
   }
   
 input[type="checkbox"]:checked ~ .dropdown-content-2 {
@@ -254,7 +279,7 @@ input[type="checkbox"]:checked ~ .dropdown-content-2 {
 }
   
 .dropdown-content-2 li {
-    color: white;
+    color: black;
     font-size: 20px;
     font-family: var(--font--text);
     margin-top: var(--spacing);
@@ -303,4 +328,24 @@ input[type="checkbox"] {
     to {
         transform: translateX(-50%);
     }
+}
+
+/* BODY DESCRIPTION */
+/* BODY DESCRIPTION */
+/* BODY DESCRIPTION */
+.outputBoxshadow{
+    position: fixed;
+    bottom:var(--spacing);
+    left: 50%;
+    transform: translateX( -50% );
+    
+    border: 1px solid rgb(131, 131, 131);
+    box-shadow: inset 0 0 5px rgb(83, 83, 83);
+    border-radius: 2px;
+    width: 80%;
+    height: 100px;
+
+    text-align: center;
+    font-family: var(--typography--header);
+    font-size: 50px;
 }

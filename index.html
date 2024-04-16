@@ -6,14 +6,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="assets/reset.css" rel="stylesheet">
 		<link href="assets/style.css" rel="stylesheet">
-		<script src="assets/main.js"></script>
+		<script defer src="assets/main.js"></script>
+        <script defer src="assets/goal.js"></script>
+        <script defer src="assets/storage.js"></script>
+        <script defer src="assets/email.js"></script>
+        
+    
 	</head>
 
     <body>
         <header>
             <nav class="navigation">
                 <div class="one">
-                    <h1>one</h1>
+                    <h1><a href="index.html">ONЄ</h1></a></h1>
                 </div>
 
                 <div class="goal-dropdown">       
@@ -24,9 +29,10 @@
                     <input type="checkbox" id="dropdown-1"></input>
 
                         <ul class="dropdown-content-1" role="alarm">
-                            <li><h2>1.Goal</h2></li>
-                            <li><input id="inputBox" placeholder="Wrtie your Goal...." required type="text"></li>
-                            <li><h2>2.Calendar</h2></li>
+                            <li><h2>Goal</h2></li>
+                            <li><input id="inputBox" name="inputBox" placeholder="Wrtie your Goal...." required type="text"></li>
+                            <li><h2>Calendar</h2></li>
+                            <li><input type="date" id="calendar" name="calendar"></li>
                         </ul>
                 </div>  
 
@@ -40,6 +46,8 @@
 
                         <ul class="dropdown-content-2" role="alarm">
                             <li><h2>Email</h2></li>
+                            <input type="email" id="emailInput" placeholder="Enter your email" required></input>
+                            <button id="sendEmailButton">Send</button>
                         </ul>
                 </div>
                 
@@ -52,6 +60,10 @@
         </header>
 
         <main>
+            <div class="outputBoxshadow">
+                <h3>ONЄ</h3>
+                <h3>Your goals in a new way to track.</h3>
+            </div>
             <!-- <div class="outputBox" id="outputBox"></div> -->
         </main>
     </body>
