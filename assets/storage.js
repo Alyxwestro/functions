@@ -1,81 +1,134 @@
-// Find your form
-const formElement = document.querySelector('header')
+// // Find your div element containing the goal dropdown
+// const divElement = document.querySelector('.goal-dropdown');
+
+// // Function to match the div content to URL/stored params
+// const updateDivContent = () => {
+//     // Get the input values
+//     const goalInput = divElement.querySelector('#inputBox').value;
+//     const calendarInput = divElement.querySelector('#calendar').value;
+
+//     // Construct URL params string
+//     const params = new URLSearchParams({
+//         goal: goalInput,
+//         calendar: calendarInput
+//     });
+
+//     // Update the URL with the params
+//     window.history.replaceState(null, null, '?' + params.toString());
+
+//     // Store the params in localStorage
+//     localStorage.setItem('goal', goalInput);
+//     localStorage.setItem('calendar', calendarInput);
+
+//     // And a callback if needed
+//     window.stateCallback?.();
+// }
+
+// // Function to update the div content from URL/stored params
+// const updateDivFromParams = () => {
+//     const urlParams = new URLSearchParams(window.location.search);
+
+//     // Update the div content based on URL params
+//     const goalInput = urlParams.get('goal');
+//     const calendarInput = urlParams.get('calendar');
+//     divElement.querySelector('#inputBox').value = goalInput || '';
+//     divElement.querySelector('#calendar').value = calendarInput || '';
+
+//     // And store the params in localStorage
+//     localStorage.setItem('goal', goalInput || '');
+//     localStorage.setItem('calendar', calendarInput || '');
+
+//     // And a callback if needed
+//     window.stateCallback?.();
+// }
+
+// // Run on page load
+// document.addEventListener('DOMContentLoaded', function() {
+//     // Update div content from URL/stored params
+//     if (window.location.search) {
+//         updateDivFromParams();
+//     } else if (localStorage.getItem('goal') || localStorage.getItem('calendar')) {
+//         updateDivFromParams();
+//     }
+
+//     // Update URL params and localStorage on input change
+//     divElement.querySelectorAll('input').forEach(input => {
+//         input.addEventListener('input', updateDivContent);
+//     });
+// });
 
 
+// Run on page load
+document.addEventListener('DOMContentLoaded', function() {
+    // Select all dropdown containers
+    const dropdownContainers = document.querySelectorAll('.dropdown-content-1');
 
-// Function to match the form to URL/stored params
-const updateForm = (params) => {
-	params = new URLSearchParams(params) // Parse into params
+    // Function to update the URL parameters and localStorage for a specific dropdown container
+    const updateDropdownContent = (container) => {
+        // Initialize an empty object to store input values and styles
+        const data = {};
 
-	params.forEach((value, key) => {
-		// Find them by their ID
-		let inputOrSelect = document.getElementById(key)
+        // Get all input values within the container
+        container.querySelectorAll('input').forEach(input => {
+            data[input.name] = input.value;
+        });
 
-		if (inputOrSelect) {
-			// Set the actual input to the param value
-			inputOrSelect.value = value
-		} else {
-			// Radios are a bit different, find them by `name` attribute
-			document.querySelectorAll(`[name=${key}]`).forEach((element) => {
-				// Check the one matching the param value
-				if (value == element.value) element.checked = true
-			}
-		)
-		}
-	})
+        // Get all output box styles within the container
+        const outputBoxStyles = {};
+        container.querySelectorAll('.outputBox').forEach(outputBox => {
+            outputBoxStyles[outputBox.classList[1]] = outputBox.style.cssText;
+        });
 
-	// And a callback!
-	window.stateCallback?.()
-}
+        // Store the input values and output box styles in localStorage for this container
+        localStorage.setItem(`${container.id}_data`, JSON.stringify(data));
+        localStorage.setItem(`${container.id}_outputBoxStyles`, JSON.stringify(outputBoxStyles));
 
-// Function to save them to localStorage
-const storeParams = () => {
-	let formParams = new FormData(formElement) // Get the form data
+        // Construct URL params string for this container
+        const params = new URLSearchParams(data);
 
-	// Loop through each key/value pair
-	formParams.forEach((value, key) => {
-		localStorage.setItem(key, value) // And save them out
-	})
-}
+        // Update the URL with the params for this container
+        window.history.replaceState(null, null, '?' + params.toString());
 
-// Function to update the URL from the form
-const updateUrlParams = () => {
-	let formParams = new FormData(formElement) // Get the form data
-	formParams = new URLSearchParams(formParams) // Make it into params
-	formParams = formParams.toString() // And then into a string
+        // Execute a callback if needed
+        window.stateCallback?.();
+    };
 
-	// You could also write this as:
-	// let formParams = new URLSearchParams(new FormData(formElement)).toString()
+    // Function to update the input values and output box styles within a specific dropdown container from localStorage
+    const updateDropdownFromStorage = (container) => {
+        // Retrieve the input values from localStorage for this container
+        const storedData = localStorage.getItem(`${container.id}_data`);
+        const data = storedData ? JSON.parse(storedData) : {};
 
-	// Update the URL with the params at the end
-	window.history.replaceState(null, null, '?' + formParams)
+        // Update the input values within the container
+        container.querySelectorAll('input').forEach(input => {
+            input.value = data[input.name] || '';
+        });
 
-	// And also store them!
-	storeParams()
+        // Retrieve the output box styles from localStorage for this container
+        const storedOutputBoxStyles = localStorage.getItem(`${container.id}_outputBoxStyles`);
+        const outputBoxStyles = storedOutputBoxStyles ? JSON.parse(storedOutputBoxStyles) : {};
 
-	// And a callback!
-	window.stateCallback?.()
-}
+        // Update the output box styles within the container
+        Object.keys(outputBoxStyles).forEach(outputBoxClass => {
+            container.querySelectorAll(`.${outputBoxClass}`).forEach(outputBox => {
+                outputBox.style.cssText = outputBoxStyles[outputBoxClass];
+            });
+        });
 
+        // Execute a callback if needed
+        window.stateCallback?.();
+    };
 
+    // Iterate over each dropdown container
+    dropdownContainers.forEach(container => {
+        // Update div content from localStorage for each container
+        updateDropdownFromStorage(container);
 
-// First, check for query/params in the URL
-if (window.location.search) {
-	let urlParams = window.location.search // Get the query string
-
-	updateForm(urlParams) // Update the form from these
-}
-// Otherwise check for saved params in storage
-else if (localStorage.length > 0) {
-	let storedParams = Object.entries(localStorage) // Get the saved params
-
-	updateForm(storedParams) // Update the form from these
-}
-
-
-
-// Don’t actually submit (which would refresh)
-formElement.onsubmit = (event) => event.preventDefault()
-
-// Run any time the form is modified
-formElement.oninput = () => updateUrlParams()
+        // Update URL params and localStorage on input change for each container
+        container.querySelectorAll('input').forEach(input => {
+            input.addEventListener('input', () => {
+                updateDropdownContent(container);
+            });
+        });
+    });
+});

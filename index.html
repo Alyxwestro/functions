@@ -16,7 +16,8 @@
 
     <body>
         <header>
-            <nav class="navigation">
+            
+            <nav class="navigation">   
                 <div class="one">
                     <h1><a href="index.html">ONЄ</h1></a></h1>
                 </div>
@@ -30,12 +31,43 @@
 
                         <ul class="dropdown-content-1" role="alarm">
                             <li><h2>Goal</h2></li>
-                            <li><input id="inputBox" name="inputBox" placeholder="Wrtie your Goal...." required type="text"></li>
-                            <li><h2>Calendar</h2></li>
+                            
+                            <li>
+                                <div class="input-container">
+                                    <input id="inputBox" name="inputBox" placeholder="Wrtie your Goal." required type="text">
+                                    <button id="enter">Enter</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="input-container">
+                                    <input id="inputBox2" name="inputBox2" placeholder="Write your Goal." required type="text">
+                                    <button id="enter">Enter</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="input-container">
+                                    <input id="inputBox3" name="inputBox3" placeholder="Write your Goal." required type="text">
+                                    <button id="enter">Enter</button>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="input-container">
+                                    <input id="inputBox4" name="inputBox4" placeholder="Write your Goal." required type="text">
+                                    <button id="enter">Enter</button>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="input-container">
+                                    <input id="inputBox5" name="inputBox5" placeholder="Write your Goal." required type="text">
+                                    <button id="enter">Enter</button>
+                                </div>
+                            </li>
+                            <li><h2 style="padding-top: 10px;">Calendar</h2></li>
                             <li><input type="date" id="calendar" name="calendar"></li>
                         </ul>
                 </div>  
-
                 <div class="email-dropdown">
                     
                     <label for="dropdown" class="email">
@@ -46,8 +78,12 @@
 
                         <ul class="dropdown-content-2" role="alarm">
                             <li><h2>Email</h2></li>
-                            <input type="email" id="emailInput" placeholder="Enter your email" required></input>
-                            <button id="sendEmailButton">Send</button>
+                            <li>
+                                <div class="email-input-container">
+                                    <input type="email" id="emailInput" placeholder="Enter your email" required></input>
+                                    <button id="sendEmailButton">Send</button>
+                                </div>
+                            </li>                        
                         </ul>
                 </div>
                 
@@ -56,7 +92,8 @@
                         <h1 class="scrolling-text">Wrtie your Goal. Wrtie your Goal. Wrtie your Goal. Wrtie your Goal. Wrtie your Goal.</h1>
                     </div>
                 </div>
-            </nav>           
+            </nav>  
+                
         </header>
 
         <main>
