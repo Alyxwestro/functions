@@ -410,7 +410,7 @@ input[type="checkbox"] {
 
 .inner {
     white-space: nowrap;
-    animation: scrollTextStart 20s linear infinite; /* Animation from left to right */
+    animation: scrollTextStart 30s linear infinite; /* Animation from left to right */
 }
 
 .scrolling-text {
@@ -419,21 +419,13 @@ input[type="checkbox"] {
 
 @keyframes scrollTextStart {
     from {
-        transform: translateX(0%);
+        transform: translateX(-100%);
     }
     to {
-        transform: translateX(-100%);
+        transform: translateX(0%);
     }
 }
 
-@keyframes scrollTextEnd {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(0%);
-    }
-}
 
 
 /* BODY DESCRIPTION */
