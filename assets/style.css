@@ -404,36 +404,37 @@ input[type="checkbox"] {
 /* NAVIGATION BAR ANIMATION*/
 /* NAVIGATION BAR ANIMATION*/
 /* NAVIGATION BAR ANIMATION*/ 
-.quote{
+.quote {
     overflow: hidden;
 }
 
-.inner{
+.inner {
     white-space: nowrap;
-    animation: move-left-to-right linear 5s infinite;
+    animation: scrollTextStart 20s linear infinite; /* Animation from left to right */
 }
 
 .scrolling-text {
-    display: inline-block; /* Make text scrollable */
+    display: inline-block;
 }
 
-@keyframes move-left-to-right {
-    from {
-        transform: translateX(-50%); /* Start position: move off-screen to the right */
-    }
-    to {
-        transform: translateX(0%); /* End position: move off-screen to the left */
-    }
-}
-
-@keyframes move-right-to-left {
+@keyframes scrollTextStart {
     from {
         transform: translateX(0%);
     }
     to {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
 }
+
+@keyframes scrollTextEnd {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
 
 /* BODY DESCRIPTION */
 /* BODY DESCRIPTION */
