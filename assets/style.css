@@ -42,7 +42,10 @@ body{
     width: 100%;     
     padding-top: var(--spacing);      
     padding-left: var(--spacing);   
+    padding-right: var(--spacing); 
     margin-right: var(--spacing); 
+    display: flex;
+    justify-content: space-between;
 }
 
 .goal-dropdown{
