@@ -55,6 +55,7 @@ body{
     padding-left: var(--spacing); 
     padding-right: var(--spacing); 
     margin-right: var(--spacing);  
+    z-index: 1;
 }
 
 .email-dropdown{  
@@ -67,13 +68,13 @@ body{
     padding-left: var(--spacing); 
     padding-right: var(--spacing); 
     margin-right: var(--spacing);  
+    z-index: 1;
 }
 
 .quote{
     background: #E8E3D5;  
     border-radius: 30px;
     box-shadow: 0 0 5px rgb(83, 83, 83); 
-    cursor: pointer; 
     width: 100%;
     padding-top: 10px;  
     padding-left: var(--spacing); 
