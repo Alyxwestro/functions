@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Functions</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="assets/reset.css" rel="stylesheet">
+		<link href="assets/style.css" rel="stylesheet">
+		<script defer src="assets/main.js"></script>
+        <script defer src="assets/goal.js"></script>
+        <script defer src="assets/storage.js"></script>
+        <script defer src="assets/email.js"></script>
+
+    
+	</head>
+
+    <body>
+        <header>
+            
+            <nav class="navigation">   
+                <div class="one">
+                    <h1><a href="landingpage.html">ONЄ Instruction</h1></a></h1>
+                </div>
+
+                <div class="goal-dropdown">       
+                    <label for="dropdown-1" class="goal">
+                    <h1>1. Set a Goal</h1>
+                    <span class="arrow-1"></span>
+                    </label>
+                    <input type="checkbox" id="dropdown-1"></input>
+
+                        <ul class="dropdown-content-1" role="alarm">
+                            <li><h2>Goal</h2></li>
+                            
+                            <li>
+                                <div class="input-container">
+                                    <input id="inputBox" name="inputBox" placeholder="Wrtie your Goal." required type="text">
+                                    <button id="enter">Enter</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="input-container">
+                                    <input id="inputBox2" name="inputBox2" placeholder="Write your Goal." required type="text">
+                                    <button id="enter">Enter</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="input-container">
+                                    <input id="inputBox3" name="inputBox3" placeholder="Write your Goal." required type="text">
+                                    <button id="enter">Enter</button>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="input-container">
+                                    <input id="inputBox4" name="inputBox4" placeholder="Write your Goal." required type="text">
+                                    <button id="enter">Enter</button>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="input-container">
+                                    <input id="inputBox5" name="inputBox5" placeholder="Write your Goal." required type="text">
+                                    <button id="enter">Enter</button>
+                                </div>
+                            </li>
+                            <iframe id="livePreviewFrame" style="display: none;"></iframe>
+                            <li><h2 style="padding-top: 10px;">Calendar</h2></li>
+                            <li><input type="date" id="calendar" name="calendar"></li>
+                        </ul>
+                </div>  
+                <div class="email-dropdown">
+                    
+                    <label for="dropdown" class="email">
+                        <h1>2. Save</h1>
+                        <span class="arrow-2"></span>
+                    </label>
+                    <input type="checkbox" id="dropdown"></input>
+
+                        <ul class="dropdown-content-2" role="alarm">
+                            <li><h2>Email</h2></li>
+                            <li>
+                                <div class="email-input-container">
+                                    <input type="email" id="emailInput" placeholder="Enter your email" required></input>
+                                    <button id="sendEmailButton">Send</button>
+                                </div>
+                            </li>                        
+                        </ul>
+                </div>
+                
+                <div class="quote">
+                    <div class="inner">
+                        <h1 id="scrolling-text" class="scrolling-text">ONЄ ONЄ ONЄ ONЄ ONЄ ONЄ ONЄ ONЄ ONЄ ONЄ ONЄ ONЄ ONЄ </h1>
+                    </div>
+                </div>
+            </nav>  
+                
+        </header>
+
+        <main>
+            <div class="outputBoxshadow">
+                <h3>ONЄ</h3>
+                <h3>Your goals in a new way to track.</h3>
+            </div>
+            <!-- <div class="outputBox" id="outputBox"></div> -->
+        </main>
+    </body>
+
+</html>
