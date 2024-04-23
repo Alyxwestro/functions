@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+@font-face {
+    font-family: 'Soyuz Grotesk';
+    src: url('font/Soyuz Grotesk.woff') format('woff');
+    
+    font-family: 'Sometimes Times';
+    src: url('font/Sometimes Times.woff') format('woff');
+}
+
 :root {
     --typography--header: 'Soyuz Grotesk', sans-serif;
     --font--display: 'Inter', sans-serif;
