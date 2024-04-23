@@ -2,13 +2,12 @@
 
 @font-face {
     font-family: 'Soyuz Grotesk';
-    src: url('font/Soyuz Grotesk.woff') format('woff');
-    src: url('font/Soyuz Grotesk.woff') format('woff2');
+    src: url('font/Soyuz Grotesk.woff2') format('woff2');
 }
 
 @font-face{
     font-family: 'Sometimes Times';
-    src: url('font/Sometimes Times.woff') format('woff');
+    src: url('font/Sometimes Times.wof2') format('woff2');
 }
 
 :root {
