@@ -486,7 +486,21 @@ input[type="checkbox"] {
     font-size: 50px;
 }
 
+/* TABLET MEDIA QUERY TABLET MEDIA QUERY
+TABLET MEDIA QUERY TABLET MEDIA QUERY
+TABLET MEDIA QUERY TABLET MEDIA QUERY */
+@media (min-width: 768px) and (max-width: 1023px){
+
+}
+
+/* MOBILE MEDIA QUERY MOBILE MEDIA QUERY
+MOBILE MEDIA QUERY MOBILE MEDIA QUERY
+MOBILE MEDIA QUERY MOBILE MEDIA QUERY */
+
+@media (min-width: 320px) and (max-width: 767px){
+
+}
 
 @media print{
-    
+
 }
