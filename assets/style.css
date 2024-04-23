@@ -71,7 +71,6 @@ body{
     padding-left: var(--spacing); 
     padding-right: var(--spacing); 
     margin-right: var(--spacing);  
-    z-index: 1;
 }
 
 .quote{
@@ -103,8 +102,9 @@ h2{
 .goal { 
     display: flex;
     justify-content: space-between;
-    align-items: center;   
-}
+    align-items: center; 
+}  
+
   
 .arrow-1 {
     border-left: 5px solid transparent;
@@ -258,6 +258,10 @@ input[type="checkbox"] {
     padding: calc(3*var(--spacing));
 
     font-size: 40px;
+    font-family: var(--font--display);
+    font-weight: 600;
+    text-align: center;
+    z-index: -1;
 }
 
 .outputBox-2 {
@@ -484,6 +488,7 @@ input[type="checkbox"] {
     text-align: center;
     font-family: var(--typography--header);
     font-size: 50px;
+    z-index:-2;
 }
 
 /* TABLET MEDIA QUERY TABLET MEDIA QUERY
@@ -536,23 +541,41 @@ MOBILE MEDIA QUERY MOBILE MEDIA QUERY */
         top: 16px;
     }
 
-    .dropdown-content-1 li {
-       
-        font-size: 15px;
-        font-family: var(--font--text);
-        margin-top: var(--spacing);
-        margin-bottom: var(--spacing);
+    .dropdown-content-1 li {       
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 7px;
     }
 
     .email-dropdown{  
         padding-top: 8px;       
         height: 30px;
-        margin-bottom: var(--spacing);
-        
+        margin-bottom: var(--spacing); 
     }
     
+    .dropdown-content-2 {
+        top: 16px;
+    }
+
+    .dropdown-content-2 li {       
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 7px;
+    }
+
     .quote{
        display: none;
+    }
+
+    .outputBoxshadow{
+        height: 100px;
+        
+        padding: var(--spacing);
+        font-size: 28px;
+    }
+
+    .outputBox{
+        font-size: 20px;
     }
 }
 @media print{
