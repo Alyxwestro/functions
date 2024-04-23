@@ -675,10 +675,6 @@ PRINT MEDIA QUERY PRINT MEDIA QUERY */
         font-size: 20px;   
       }
 
-      .outputBoxshadow{
-        font-size: 50px;
-      }
-
       .printtext{
         display: block;
         position: relative;
@@ -690,7 +686,7 @@ PRINT MEDIA QUERY PRINT MEDIA QUERY */
       }
 
       h3{
-        font-size: 50px;
+        font-size: 45px;
         font-family: var(--typography--header);
       }
 
