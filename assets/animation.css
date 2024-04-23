@@ -54,31 +54,31 @@ p:nth-child(1){
 
 @keyframes decreaseSize {
     0% {
-        font-size: 80px; /* Start with initial font size */
+        font-size: 80px; 
     }
      100% {
-        font-size: 20px; /* End with smaller font size */
+        font-size: 20px; 
     }
 }
 
 @keyframes fadeInOut {
     0% {
-        opacity: 0; /* Start with opacity 0 for fade in effect */
+        opacity: 0; 
     }
     50% {
-        opacity: 1; /* Hold opacity at 1 for half of the animation duration */
+        opacity: 1; 
     }
     100% {
-        opacity: 0; /* End with opacity 0 for fade out effect */
+        opacity: 0; 
     }
 }
 
 @keyframes colorChange {
     0% {
-        color: #84AEEB; /* Start with the initial color */
+        color: #84AEEB; 
     }
     100% {
-        color: black; /* End with the new color */
+        color: black; 
     }
 }
 
