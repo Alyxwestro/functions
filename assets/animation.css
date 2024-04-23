@@ -46,14 +46,16 @@ p:nth-child(1){
 /* MACBOOK 15 SIZE MACBOOK 15 SIZE */
 /* MACBOOK 15 SIZE MACBOOK 15 SIZE */
 /* MACBOOK 15 SIZE MACBOOK 15 SIZE */
-@keyframes moveUp {
-     0% {
-        transform: translate(-50%, -50%); 
-    }
-     100% {
-         transform: translate(-101.5vw, -52.9vh); 
-    }
-}
+@media (max-width: 2880px){
+    @keyframes moveUp {
+        0% {
+           transform: translate(-50%, -50%); 
+       }
+        100% {
+            transform: translate(-101.5vw, -52.9vh); 
+       }
+   }
+} 
 
 @keyframes decreaseSize {
     0% {
