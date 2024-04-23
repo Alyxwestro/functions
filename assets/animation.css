@@ -52,7 +52,7 @@ p:nth-child(1){
            transform: translate(-50%, -50%); 
        }
         100% {
-            transform: translate(-101.5vw, -52.9vh); 
+            transform: translate(-101.5vw, -53.1vh); 
        }
    }
 } 
