@@ -58,3 +58,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Call the function to send the URL after 2 minutes
     setTimeout(sendUrlAfterTwoMinutes, 2 * 60 * 1000); // 2 minutes in milliseconds
 });
+
+// saveAsPDFButtonsaveAsPDFButton
+// saveAsPDFButtonsaveAsPDFButton
+// saveAsPDFButtonsaveAsPDFButton
+
+document.getElementById('saveAsPDFButton').addEventListener('click', function() {
+    window.print(); // This triggers the print function
+});
