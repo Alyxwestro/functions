@@ -260,7 +260,7 @@ input[type="checkbox"] {
     left: 50%;
     transform: translateX( -50% );
     
-    background-color: rgb(227, 172, 255);
+    background-color: #678DB2;
     border-radius: 2px;
     width: calc(100% - 2 * var(--spacing));
     height: 100px;
@@ -274,7 +274,7 @@ input[type="checkbox"] {
 }
 
 .outputBox-2 {
-    background-color: #840A0A;
+    background-color: #8AB9E4;
     position: fixed;
     bottom:calc(11*var(--spacing));
     left: 50%;
@@ -284,7 +284,7 @@ input[type="checkbox"] {
 }
 
 .outputBox-3 {
-    background-color: #253C77;
+    background-color: #BCD5F6;
 
     position: fixed;
     bottom:calc(21*var(--spacing));
@@ -295,7 +295,7 @@ input[type="checkbox"] {
 }
 
 .outputBox-4{
-    background-color: #8FFDDC;
+    background-color: #D3E6FF;
 
     position: fixed;
     bottom:calc(31*var(--spacing));
@@ -306,7 +306,7 @@ input[type="checkbox"] {
 }
 
 .outputBox-5{
-    background-color: #FFF73A;
+    background-color: #DBF4FF;
 
     position: fixed;
     bottom:calc(41*var(--spacing));
@@ -526,8 +526,7 @@ TABLET MEDIA QUERY TABLET MEDIA QUERY */
         margin-bottom: var(--spacing);
         padding-top: 8px; 
         padding-bottom: 8px;
-        height: 30px;
-        
+        height: 30px;    
     }
 
     .goal-dropdown{   
@@ -592,14 +591,60 @@ MOBILE MEDIA QUERY MOBILE MEDIA QUERY */
     }
 
     .navigation {
+        flex-direction: column;
+        height: 30px; 
+        align-items: center; 
+        justify-content: flex-start;
+        margin-left: 20px;
         width: 95%;    
+    }
+
+    .one{   
+        margin-bottom: var(--spacing);
+        padding-top: 8px; 
+        padding-bottom: 8px;
+        height: 30px;    
     }
 
     .goal-dropdown{   
         padding-top: 8px;       
+        height: 30px;
+        margin-bottom: var(--spacing);
+        z-index: 2;
     }
 
-    .outputBoxshadow{
+    .dropdown-content-1 li {       
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .email-dropdown{  
+        padding-top: 8px;       
+        height: 30px;
+        margin-bottom: var(--spacing); 
+    }
+
+    .dropdown-content-1 {    
+        top: 16px;
+    }
+
+    .dropdown-content-2 {
+        top: 16px;
+    }
+
+    .dropdown-content-2 li {       
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .quote{
+       display: none;
+    }
+
+    .outputBoxshadow{   
+        padding: var(--spacing);
         font-size: 28px;
     }
 
@@ -656,6 +701,5 @@ PRINT MEDIA QUERY PRINT MEDIA QUERY */
         position: absolute;
         left: 555px;
         top: -20px;
-
       }
 }
