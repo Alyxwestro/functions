@@ -19,7 +19,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 
-    animation: moveUp 5s forwards;     
+    animation: moveUp 4s forwards;     
     animation-delay: 5s;
 }
 p{
@@ -39,16 +39,19 @@ p:nth-child(1){
 }
 
 .size{
-    animation: decreaseSize 5s forwards, colorChange 3s forwards;
+    animation: decreaseSize 5s forwards, colorChange 2s forwards;
     animation-delay: 5s;
 }
 
+/* MACBOOK 15 SIZE MACBOOK 15 SIZE */
+/* MACBOOK 15 SIZE MACBOOK 15 SIZE */
+/* MACBOOK 15 SIZE MACBOOK 15 SIZE */
 @keyframes moveUp {
      0% {
         transform: translate(-50%, -50%); /* Start with no translation */
     }
      100% {
-         transform: translate(-98.5vw, -52.4vh); /* Move up by the height of the viewport */
+         transform: translate(-101.5vw, -52.9vh); /* Move up by the height of the viewport */
     }
 }
 
@@ -86,7 +89,14 @@ p:nth-child(1){
 TABLET MEDIA QUERY TABLET MEDIA QUERY
 TABLET MEDIA QUERY TABLET MEDIA QUERY */
 @media (min-width: 768px) and (max-width: 1023px){
-
+    @keyframes moveUp {
+        0% {
+           transform: translate(-50%, -50%); 
+       }
+        100% {
+            transform: translate(-110vw, -52.9vh); 
+       }
+   }
 }
 
 /* MOBILE MEDIA QUERY MOBILE MEDIA QUERY
@@ -108,12 +118,35 @@ MOBILE MEDIA QUERY MOBILE MEDIA QUERY */
 
     @keyframes decreaseSize {
         0% {
-            font-size: 35px; /* Start with initial font size */
+            font-size: 35px; 
         }
          100% {
-            font-size: 16px; /* End with smaller font size */
+            font-size: 16px; 
         }
     }
 
+    @keyframes moveUp {
+        0% {
+           transform: translate(-50%, -50%); 
+       }
+        100% {
+            transform: translate(-97vw, -49.5vh); 
+       }
+   }
+
     
+}
+
+/* IMAC SIZE IMAC SIZE IMAC SIZE */
+/* IMAC SIZE IMAC SIZE IMAC SIZE */
+/* IMAC SIZE IMAC SIZE IMAC SIZE */
+@media (width: 2048px){
+    @keyframes moveUp {
+        0% {
+           transform: translate(-50%, -50%); 
+       }
+        100% {
+            transform: translate(-98.5vw, -52.4vh); 
+       }
+   }
 }
