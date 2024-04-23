@@ -103,12 +103,12 @@ MOBILE MEDIA QUERY MOBILE MEDIA QUERY */
     }
 
     p:nth-child(1){
-        font-size: 30px;     
+        font-size: 35px;     
     }
 
     @keyframes decreaseSize {
         0% {
-            font-size: 30px; /* Start with initial font size */
+            font-size: 35px; /* Start with initial font size */
         }
          100% {
             font-size: 16px; /* End with smaller font size */
