@@ -46,7 +46,7 @@ p:nth-child(1){
 /* MACBOOK 15 SIZE MACBOOK 15 SIZE */
 /* MACBOOK 15 SIZE MACBOOK 15 SIZE */
 /* MACBOOK 15 SIZE MACBOOK 15 SIZE */
-@media (max-width: 2880px){
+@media (min-width: 1024px) and (max-width: 2880px){
     @keyframes moveUp {
         0% {
            transform: translate(-50%, -50%); 
@@ -142,7 +142,7 @@ MOBILE MEDIA QUERY MOBILE MEDIA QUERY */
 /* IMAC SIZE IMAC SIZE IMAC SIZE */
 /* IMAC SIZE IMAC SIZE IMAC SIZE */
 /* IMAC SIZE IMAC SIZE IMAC SIZE */
-@media (max-width: 5120px){
+@media (min-width: 2881px) and (max-width: 5120px){
     @keyframes moveUp {
         0% {
            transform: translate(-50%, -50%); 
