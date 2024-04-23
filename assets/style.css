@@ -191,7 +191,7 @@ input[type="checkbox"] {
 }
 
 #enter:hover{
-    background-color:  #BCD5F6;
+    background-color:  #84AEEB;
 }
 
 #inputBox2{
@@ -356,7 +356,7 @@ input[type="checkbox"] {
 }
 
 #sendEmailButton:hover{
-    background-color:  #BCD5F6;
+    background-color:  #84AEEB;
 }
 
 .email { 
@@ -437,7 +437,7 @@ input[type="checkbox"] {
 }
 
 #saveAsPDFButton:hover{
-    background-color:  #BCD5F6;
+    background-color:  #84AEEB;
 }
 
 /* NAVIGATION BAR ANIMATION*/

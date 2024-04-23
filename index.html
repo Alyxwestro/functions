@@ -9,7 +9,7 @@
 
     <body>
         <div class="intro">
-            <p><span class="fade">Welcome to</span>&nbsp;<span class="size">ONЄ</span></p>
+            <p><span class="fade">Welcome to</span>&nbsp;<span class="size" style="color: #84AEEB";>ONЄ</span></p>
             <p><span class="fade">Transform your goals into inspiring visuals<br>and unleash your potential.</span></p>
         </div>
     </body>
@@ -48,7 +48,7 @@
         }
 
         .size{
-            animation: decreaseSize 5s forwards;
+            animation: decreaseSize 5s forwards, colorChange 3s forwards;
             animation-delay: 5s;
         }
 
@@ -79,6 +79,15 @@
             }
             100% {
                 opacity: 0; /* End with opacity 0 for fade out effect */
+            }
+        }
+
+        @keyframes colorChange {
+            0% {
+                color: #84AEEB; /* Start with the initial color */
+            }
+            100% {
+                color: black; /* End with the new color */
             }
         }
     </style>
