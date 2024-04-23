@@ -26,6 +26,9 @@ body{
     margin: var(--spacing);
 }
 
+.printtext{
+    display: none;
+}
 
 /* NAVIGATION BAR */
 /* NAVIGATION BAR */
@@ -578,7 +581,6 @@ TABLET MEDIA QUERY TABLET MEDIA QUERY */
 /* MOBILE MEDIA QUERY MOBILE MEDIA QUERY
 MOBILE MEDIA QUERY MOBILE MEDIA QUERY
 MOBILE MEDIA QUERY MOBILE MEDIA QUERY */
-
 @media (min-width: 320px) and (max-width: 767px){
    
     h1{
@@ -605,6 +607,56 @@ MOBILE MEDIA QUERY MOBILE MEDIA QUERY */
         font-size: 20px;
     }
 }
+
+/* PRINT MEDIA QUERY PRINT MEDIA QUERY
+PRINT MEDIA QUERY PRINT MEDIA QUERY
+PRINT MEDIA QUERY PRINT MEDIA QUERY */
 @media print{
+    @page {
+        size: landscape;
+        background: always;
+        margin: 0;
+
+        .printtext{
+            display: block;
+        }
+      }
+
+      header{
+        display: none;
+      }
+
+      .outputBox{
+        font-size: 20px;   
+      }
+
+      .outputBoxshadow{
+        font-size: 50px;
+      }
+
+      .printtext{
+        display: block;
+        position: relative;
+        top: 40px;
+        text-align: center;
+        
+        width: 100%;
+        margin: var(--spacing);
+      }
+
+      h3{
+        font-size: 50px;
+        font-family: var(--typography--header);
+      }
+
+      h4{
+        font-size: 16px;
+        font-family: var(--font--display);
+        font-weight: 700;
+        position: absolute;
+        left: 555px;
+        top: -20px;
+
+      }
 
 }
