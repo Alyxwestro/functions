@@ -498,9 +498,63 @@ MOBILE MEDIA QUERY MOBILE MEDIA QUERY
 MOBILE MEDIA QUERY MOBILE MEDIA QUERY */
 
 @media (min-width: 320px) and (max-width: 767px){
+   
+    h1{
+        font-size: 16px;
+    }
+    
+    h2{
+        font-size: 14px;  
+    }
 
+    .navigation {
+        flex-direction: column;
+        height: 30px; /* Reset the height */
+        align-items: center; /* Align items in the center horizontally */
+        justify-content: flex-start;
+        margin-left: 20px;
+        width: 92%;
+        
+    }
+
+    .one{   
+        margin-bottom: var(--spacing);
+        padding-top: 8px; 
+        padding-bottom: 8px;
+        height: 30px;
+        
+    }
+
+    .goal-dropdown{   
+        padding-top: 8px;       
+        height: 30px;
+        margin-bottom: var(--spacing);
+        z-index: 2;
+    }
+
+    .dropdown-content-1 {    
+        top: 16px;
+    }
+
+    .dropdown-content-1 li {
+       
+        font-size: 15px;
+        font-family: var(--font--text);
+        margin-top: var(--spacing);
+        margin-bottom: var(--spacing);
+    }
+
+    .email-dropdown{  
+        padding-top: 8px;       
+        height: 30px;
+        margin-bottom: var(--spacing);
+        
+    }
+    
+    .quote{
+       display: none;
+    }
 }
-
 @media print{
 
 }
