@@ -184,7 +184,7 @@ input[type="checkbox"] {
 
 #enter {
     position: absolute;
-    top: 50%; /* Adjust the button position vertically */
+    top: 50%; 
     right: 10px; 
     transform: translateY(-50%);
     cursor: pointer;
@@ -322,11 +322,11 @@ input[type="checkbox"] {
 /* NAVIGATION BAR DROPDOWN CALENDAR*/
 #calendar{
     display: block;
-    width: 100%; /* Set width to fill its container */
-    padding: 0.5rem; /* Add some padding for better appearance */
-    border: 1px solid #ccc; /* Add a border for better visibility */
-    border-radius: 4px; /* Add rounded corners for better aesthetics */
-    box-sizing: border-box; /* Include padding and border in the element's total width */
+    width: 100%; 
+    padding: 0.5rem; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
 }
   
 /* NAVIGATION BAR DROPDOWN EMAIL*/
@@ -340,11 +340,11 @@ input[type="checkbox"] {
 
 #emailInput{
     display: block;
-    width: 100%; /* Set width to fill its container */
-    padding: 0.5rem; /* Add some padding for better appearance */
-    border: 1px solid #ccc; /* Add a border for better visibility */
-    border-radius: 4px; /* Add rounded corners for better aesthetics */
-    box-sizing: border-box; /* Include padding and border in the element's total width */
+    width: 100%; 
+    padding: 0.5rem; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
 }
 
 #emailInput:focus{
@@ -353,7 +353,7 @@ input[type="checkbox"] {
 
 #sendEmailButton{
     position: absolute;
-    top: 50%; /* Adjust the button position vertically */
+    top: 50%; 
     right: 10px; 
     transform: translateY(-50%);
     cursor: pointer;
@@ -462,7 +462,7 @@ input[type="checkbox"] {
 
 .inner {
     white-space: nowrap;
-    animation: scrollTextStart 20s linear infinite; /* Animation from left to right */
+    animation: scrollTextStart 20s linear infinite; 
 }
 
 .scrolling-text {
@@ -484,14 +484,14 @@ input[type="checkbox"] {
 /* BODY DESCRIPTION */
 .outputBoxshadow{
     position: fixed;
-    bottom: var(--spacing); /* Spacing from the bottom */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Move back half of its width */
+    bottom: var(--spacing); 
+    left: 50%; 
+    transform: translateX(-50%); 
     
     border: 1px solid rgb(131, 131, 131);
     box-shadow: inset 0 0 5px rgb(83, 83, 83);
     border-radius: 2px;
-    width: calc(100% - 2 * var(--spacing)); /* Adjust width with spacing */
+    width: calc(100% - 2 * var(--spacing)); 
     height: 100px;
     
     text-align: center;
@@ -515,8 +515,8 @@ TABLET MEDIA QUERY TABLET MEDIA QUERY */
 
     .navigation {
         flex-direction: column;
-        height: 30px; /* Reset the height */
-        align-items: center; /* Align items in the center horizontally */
+        height: 30px; 
+        align-items: center; 
         justify-content: flex-start;
         margin-left: 20px;
         width: 96%;    
