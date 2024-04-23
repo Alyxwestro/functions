@@ -140,7 +140,7 @@ MOBILE MEDIA QUERY MOBILE MEDIA QUERY */
 /* IMAC SIZE IMAC SIZE IMAC SIZE */
 /* IMAC SIZE IMAC SIZE IMAC SIZE */
 /* IMAC SIZE IMAC SIZE IMAC SIZE */
-@media (width: 2048px){
+@media (max-width: 5120px){
     @keyframes moveUp {
         0% {
            transform: translate(-50%, -50%); 
