@@ -3,6 +3,7 @@
 @font-face {
     font-family: 'Soyuz Grotesk';
     src: url('font/Soyuz Grotesk.woff') format('woff');
+    src: url('font/Soyuz Grotesk.woff') format('woff2');
 }
 
 @font-face{
