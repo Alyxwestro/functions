@@ -1,0 +1,75 @@
+body{
+    background-color: #E8E3D5;
+    margin: 10px;
+}
+.intro {
+    width: 80%;
+    text-align: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    animation: moveUp 5s forwards;     
+    animation-delay: 5s;
+}
+p{
+    font-family:'Inter', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+
+    margin-top: 10px;
+}
+p:nth-child(1){
+    font-size: 80px;
+    font-family:'Soyuz Grotesk', sans-serif;
+}
+
+.fade {
+    animation: fadeInOut 5s forwards;
+}
+
+.size{
+    animation: decreaseSize 5s forwards, colorChange 3s forwards;
+    animation-delay: 5s;
+}
+
+@keyframes moveUp {
+     0% {
+        transform: translate(-50%, -50%); /* Start with no translation */
+    }
+     100% {
+         transform: translate(-98.5vw, -52.4vh); /* Move up by the height of the viewport */
+    }
+}
+
+@keyframes decreaseSize {
+    0% {
+        font-size: 80px; /* Start with initial font size */
+    }
+     100% {
+        font-size: 20px; /* End with smaller font size */
+    }
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0; /* Start with opacity 0 for fade in effect */
+    }
+    50% {
+        opacity: 1; /* Hold opacity at 1 for half of the animation duration */
+    }
+    100% {
+        opacity: 0; /* End with opacity 0 for fade out effect */
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: #84AEEB; /* Start with the initial color */
+    }
+    100% {
+        color: black; /* End with the new color */
+    }
+}
