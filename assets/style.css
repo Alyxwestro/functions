@@ -93,7 +93,7 @@ h1{
 h2{
     font-family: var(--font--display);
     font-size: 18px;
-    font-weight: medium;
+    font-weight: 600;
     color: black;
 }
 
@@ -403,7 +403,34 @@ input[type="checkbox"] {
     opacity: 0;
     position: absolute;
 }
+/* NAVIGATION BAR DROPDOWN SAVE AS PDF*/
+/* NAVIGATION BAR DROPDOWN SAVE AS PDF*/
+/* NAVIGATION BAR DROPDOWN SAVE AS PDF*/
+.savepdf{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: var(--spacing);
+}
 
+#saveAsPDFButton{
+    position: absolute;  
+    right: 10px;     
+    cursor: pointer;
+
+    font-family: var(--font--display);
+    font-size: 12px;
+
+    border: 0.5px solid rgb(83, 83, 83);
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 5px;
+}
+
+#saveAsPDFButton:hover{
+    border: 0.5px solid #FF7329;
+}
 
 /* NAVIGATION BAR ANIMATION*/
 /* NAVIGATION BAR ANIMATION*/
