@@ -516,8 +516,7 @@ TABLET MEDIA QUERY TABLET MEDIA QUERY */
         align-items: center; /* Align items in the center horizontally */
         justify-content: flex-start;
         margin-left: 20px;
-        width: 95%;
-        
+        width: 96%;    
     }
 
     .one{   
@@ -529,7 +528,7 @@ TABLET MEDIA QUERY TABLET MEDIA QUERY */
     }
 
     .goal-dropdown{   
-        padding-top: 8px;       
+        padding-top: 7px;       
         height: 30px;
         margin-bottom: var(--spacing);
         z-index: 2;
@@ -565,15 +564,13 @@ TABLET MEDIA QUERY TABLET MEDIA QUERY */
        display: none;
     }
 
-    .outputBoxshadow{
-        height: 100px;
-        
+    .outputBoxshadow{   
         padding: var(--spacing);
-        font-size: 28px;
+        font-size: 40px;
     }
 
     .outputBox{
-        font-size: 20px;
+        font-size: 30px;
     }
 
 }
@@ -593,64 +590,14 @@ MOBILE MEDIA QUERY MOBILE MEDIA QUERY */
     }
 
     .navigation {
-        flex-direction: column;
-        height: 30px; /* Reset the height */
-        align-items: center; /* Align items in the center horizontally */
-        justify-content: flex-start;
-        margin-left: 20px;
-        width: 95%;
-        
-    }
-
-    .one{   
-        margin-bottom: var(--spacing);
-        padding-top: 8px; 
-        padding-bottom: 8px;
-        height: 30px;
-        
+        width: 95%;    
     }
 
     .goal-dropdown{   
         padding-top: 8px;       
-        height: 30px;
-        margin-bottom: var(--spacing);
-        z-index: 2;
-    }
-
-    .dropdown-content-1 {    
-        top: 16px;
-    }
-
-    .dropdown-content-1 li {       
-        font-size: 16px;
-        margin-top: 5px;
-        margin-bottom: 10px;
-    }
-
-    .email-dropdown{  
-        padding-top: 8px;       
-        height: 30px;
-        margin-bottom: var(--spacing); 
-    }
-    
-    .dropdown-content-2 {
-        top: 16px;
-    }
-
-    .dropdown-content-2 li {       
-        font-size: 16px;
-        margin-top: 5px;
-        margin-bottom: 10px;
-    }
-
-    .quote{
-       display: none;
     }
 
     .outputBoxshadow{
-        height: 100px;
-        
-        padding: var(--spacing);
         font-size: 28px;
     }
 
