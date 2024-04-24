@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    function sendUrlAfterTwoMinutes() {
+    function sendUrlAfterSixMonths() {
         const email = emailInput.value.trim(); 
         const websiteUrl = window.location.href;
         
@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    setTimeout(sendUrlAfterTwoMinutes, 2 * 60 * 1000); 
+    const sixMonthsInMillis = 6 * 30 * 24 * 60 * 60 * 1000; // 6 months in milliseconds
+    setTimeout(sendUrlAfterSixMonths, sixMonthsInMillis); 
 });
 
 // saveAsPDFButtonsaveAsPDFButton
