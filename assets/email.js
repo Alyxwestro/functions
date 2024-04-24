@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    const sixMonthsInMillis = 6 * 30 * 24 * 60 * 60 * 1000; // 6 months in milliseconds
+    const sixMonthsInMillis = 6 * 30 * 24 * 60 * 60 * 1000; 
     setTimeout(sendUrlAfterSixMonths, sixMonthsInMillis); 
 });
 
